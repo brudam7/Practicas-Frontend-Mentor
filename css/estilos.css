@@ -1,0 +1,183 @@
+:root {
+  /* Colores primarios */
+  --light-red: hsl(0, 100%, 67%);
+  --orange-yellow: hsl(39, 100%, 56%);
+  --green-teal: hsl(166, 100%, 37%);
+  --cobalt-blue: hsl(234, 85%, 45%);
+  /* Colores gradientes */
+  --background: hsl(252, 100%, 67%) hsl(241, 81%, 54%);
+  --circulo: hsla(256, 72%, 46%, 1) hsla(241, 72%, 46%, 0);
+  /* Colores neutros */
+  --white: hsl(0, 0%, 100%);
+  --pale-blue: hsl(221, 100%, 96%);
+  --light-lavender: hsl(241, 100%, 89%);
+  --dark-gray-blue: hsl(224, 30%, 27%);
+}
+
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-family: "Hanken Grotesk", sans-serif;
+  font-size: 18px;
+}
+
+main {
+  background-color: var(--pale-blue);
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.section {
+  width: 700px;
+  height: 500px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: var(--white);
+  border-radius: 25px;
+  -webkit-box-shadow: 5px 5px 31px -15px rgba(66, 68, 90, 0.5);
+          box-shadow: 5px 5px 31px -15px rgba(66, 68, 90, 0.5);
+}
+
+.section1 {
+  background: -webkit-gradient(linear, left top, left bottom, from(hsl(252deg, 100%, 67%)), to(hsl(241deg, 81%, 54%)));
+  background: linear-gradient(hsl(252deg, 100%, 67%), hsl(241deg, 81%, 54%));
+  width: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 25px;
+}
+.section1__h3 {
+  color: var(--light-lavender);
+  margin-top: 0;
+}
+.section1__numeros {
+  background: -webkit-gradient(linear, left top, left bottom, from(hsl(256deg, 72%, 46%)), to(hsla(241deg, 72%, 46%, 0)));
+  background: linear-gradient(hsl(256deg, 72%, 46%), hsla(241deg, 72%, 46%, 0));
+  border-radius: 50%;
+  width: 12rem;
+  height: 12rem;
+  color: var(--light-lavender);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.section1__numeros span {
+  color: var(--white);
+  font-size: 3.5rem;
+  font-weight: 700;
+}
+.section1__subtitulo {
+  color: var(--white);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 30px;
+  margin-bottom: 0;
+}
+.section1__p {
+  color: rgba(255, 255, 255, 0.5);
+  font-weight: 500;
+  text-align: center;
+  padding: 0 60px;
+  font-size: 1rem;
+  font-family: sans-serif;
+}
+
+.section2 {
+  background-color: var(--white);
+  border-radius: 25px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 30px;
+}
+.section2__box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 260px;
+  background-color: var(--pale-blue);
+  padding: 15px;
+  margin-bottom: 20px;
+  font-weight: 500;
+  opacity: 0.7;
+  border-radius: 10px;
+}
+.section2__h3 {
+  margin-top: 25px;
+}
+.section2__capacidades {
+  font-size: 1rem;
+}
+.section2__capacidades img {
+  margin-right: 10px;
+  vertical-align: middle;
+}
+.section2__capacidades--red {
+  color: var(--light-red);
+}
+.section2__capacidades--orange {
+  color: var(--orange-yellow);
+}
+.section2__capacidades--green {
+  color: var(--green-teal);
+}
+.section2__capacidades--blue {
+  color: var(--cobalt-blue);
+}
+.section2__puntaje span {
+  font-weight: 700;
+}
+.section2__button {
+  background-color: var(--dark-gray-blue);
+  padding: 10px 0;
+  border-radius: 25px;
+  color: var(--white);
+  font-weight: 700;
+}
